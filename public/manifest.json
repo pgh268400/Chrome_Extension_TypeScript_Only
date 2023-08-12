@@ -1,0 +1,12 @@
+{
+  "name": "Google Color Changer",
+  "version": "1.0",
+  "description": "This extension will run multiple scripts after the site has loaded.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*", "https://www.google.co.uk/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
